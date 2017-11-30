@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	</head>
 	<body>
-<!--ESTA VISTA HAY QUE MOVERLA  A LA CARPETA USER-->
+<!--Se supone que esta vista es llamada desde el controller home.php-->
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-12 col-lg-12"   style="background-color: #5c5ce2;width: 100%;height: 50px;"">
