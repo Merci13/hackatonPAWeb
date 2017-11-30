@@ -3,7 +3,7 @@ class User_model extends CI_Model {
 
   function authenticate($user, $pass) {
 		$pass = md5($pass);
-    $query = $this->db->get_where('users',
+    $query = $this->db->get_where('musicos',
       array('correo' => $user, 'password' => $pass));
 
 	  return $query->result_object();
