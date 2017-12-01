@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to My App</title>
+	<title>Welcome to Music</title>
 
 	
 	<!-- Latest compiled and minified CSS & JS -->
