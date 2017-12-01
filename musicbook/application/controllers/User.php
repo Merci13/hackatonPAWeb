@@ -21,20 +21,23 @@ class User extends CI_Controller
 		$r = $this->User_model->authenticate($correo, $password);
 		if (count($r) > 0 ) {
 			$user = $r[0];
-			echo "Welcome {$user->correo}";
+			redirect('home');
 		} else {
 			echo "Invalid user name or password";
 		}
 	}
 
-	//public function list() {
-	//	$users = $this->User_model->all();
+	public function list() {
+        $busqueda = $this->input->post('busqueda')
+		$users = $this->User_model->all($busqueda);
 		
-	//	$data['users'] = $users;
-	//	$data['title'] = 'List of Users';
+		$data['musicos'] = $users;
+		$data['title'] = 'List of Users';
 		
-	//	$this->load->view('user/list', $data);
-	//}
+		$this->load->view('user/list', $data);
+	}
+
+
 
     public function save()
     {

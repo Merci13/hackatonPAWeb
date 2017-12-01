@@ -18,9 +18,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 		<div class="container">
-			<div class="row">
+			<div class="row"><!--titulo-->
 				<div class="col-sm-12 col-md-6 col-lg-6" style="padding-bottom:50px">
-					<h1>Bienvenido a MusicBook</h1>
+					<h1>Bienvenido a MusicBook </h1>
 					<h3>Tu red social de musica</h3>
 				</div>
 			</div>
@@ -37,10 +37,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-12"   style="background-color:#5c5ce2 ;width: 100%;height: 50px;"">
-					<a href="<?php echo base_url()?>user/login.php" class="btn btn-success">Login</a>
-					<a class="btn btn-success">Registrarse</a>
-				</div>
+				<form method="POST" action=<?php echo site_url('user/list') ?>>
+					<input type="text" name="busqueda">
+					<label for="busqueda" type="submit" class="btn btn-success">Buscar</label>
+					
+				</form>
 			</div>
 		</div>
 
