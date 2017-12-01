@@ -37,15 +37,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<div class="container">
 			<div class="row">
-				<form method="POST" action=<?php echo site_url('user/list') ?>>
+				<form method="POST" action="<?php echo site_url('user'); ?>">
 					<input type="text" name="busqueda">
-					<label for="busqueda" type="submit" class="btn btn-success">Buscar</label>
+					<button for="busqueda" type="submit" class="btn btn-primary">Buscar</button>
 					
 				</form>
 			</div>
 		</div>
-
-
 
 	</body>
 </html>

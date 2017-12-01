@@ -28,13 +28,15 @@ class User extends CI_Controller
 	}
 
 	public function list() {
-        $busqueda = $this->input->post('busqueda')
-		$users = $this->User_model->all($busqueda);
-		
-		$data['musicos'] = $users;
-		$data['title'] = 'List of Users';
-		
-		$this->load->view('user/list', $data);
+       $busqueda=$this->input->post('busqueda');
+       $users = $this->User_model->all($busqueda);
+
+        
+        $data['musicos'] = $users;
+        $data['title'] = 'List of Users';
+        
+        $this->load->view('user/list', $data);
+
 	}
 
 

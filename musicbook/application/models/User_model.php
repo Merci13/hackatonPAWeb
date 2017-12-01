@@ -18,10 +18,12 @@ class User_model extends CI_Model {
 
   function all($busqueda)
   {
-    $sql = "SELECT nombre_completo FROM musicos WHERE  generos_gusta = ? OR nombre_completo = ?";
-  $this->db->query($sql, array($busqueda, $busqueda));
+
+    $query = $this->db->get_where('musicos', array('instrumentos_toca' => $busqueda));
+   //$query = $this->db->get('musicos');
 
     return $query->result_object();
+    
   }
 
 }
