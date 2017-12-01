@@ -84,6 +84,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<th>nombre_completo</th>
 					<th>instrumento_toca</th>
 					<th>genero_gusta</th>
+					<th>Direccion</th>
+					<th>Correo</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -93,6 +95,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<td><?php echo $user->nombre_completo; ?></td>
 						<td><?php echo $user->instrumentos_toca; ?></td>
 						<td><?php echo $user->generos_gusta; ?></td>
+						<td><?php echo $user->difreccion; ?></td>
+						<td><?php echo $user->correo; ?></td>
+
 					</tr>	
 				<?php } ?>
 				
